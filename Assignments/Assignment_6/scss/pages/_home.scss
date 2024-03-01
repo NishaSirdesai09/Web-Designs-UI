@@ -1,0 +1,83 @@
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+  
+    .hero-img {
+      width: 100%;
+      max-height: 710px;
+      object-fit: cover; 
+      opacity: 0.8; 
+      transition: opacity 0.3s ease;
+    }
+  
+    .hero-text {
+      position: absolute;
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+      color: rgb(253, 248, 248); 
+  
+      h1, p {
+        margin: 0 0 10px; 
+      }
+  
+      .btn {
+        margin-top: 20px; 
+      }
+    }
+
+    // Responsive adjustments
+    @media (max-width: 1200px) {
+        .hero-img {
+            max-height: 600px; // Reduce the max height for smaller screens
+        }
+        
+        .hero-text {
+            h1 {
+                font-size: 1.5rem; // Smaller font size for h1
+            }
+            p {
+                font-size: 1rem; // Smaller font size for paragraph
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero-img {
+            max-height: 500px;
+        }
+
+        .hero-text {
+            h1 {
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 0.9rem;
+            }
+            .btn {
+                padding: 0.5rem 1rem; // Adjust button padding
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero-img {
+            max-height: 400px;
+        }
+
+        .hero-text {
+            h1 {
+                font-size: 1rem;
+            }
+            p {
+                font-size: 0.8rem;
+            }
+            .btn {
+                font-size: 0.8rem; // Adjust button font size
+            }
+        }
+    }
+}

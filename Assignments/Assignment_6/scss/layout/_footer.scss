@@ -1,0 +1,38 @@
+footer {
+    padding: calcRem(10) 0;
+    background-color: $secondary-color; // Assuming $secondary-color is defined in your variables
+    color: white;
+    text-align: center;
+    position:relative;
+    bottom: 0%;
+    width: 100%;
+    left:0%;
+    z-index: 10;
+  
+    p {
+      margin: 0;
+      padding: calcRem(5) 0;
+      font-size: calcRem(16);
+      @include flexCenter; // Assuming flexCenter mixin is defined for center alignment
+  
+      // Responsive design adjustments
+      @media screen and (max-width: 768px) {
+        font-size: calcRem(14);
+      }
+    }
+  
+    // Example of using a function for font size
+    font-size: calcRem(18); // Assuming calcRem function is defined to convert px to rem
+  
+    // Example of a nested pseudo-selector
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+
+  .social-icons {
+    i{
+        color: rgb(255, 255, 255);
+        margin: 0 8px;
+    }
+  }

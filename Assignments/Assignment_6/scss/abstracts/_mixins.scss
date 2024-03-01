@@ -1,0 +1,41 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin gridLayout($cols, $gap: 20px) {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    gap: $gap;
+  }
+
+  @mixin respond-to($breakpoint) {
+    @if $breakpoint == "small" {
+      @media (max-width: 600px) { @content; }
+    } @else if $breakpoint == "medium" {
+      @media (max-width: 900px) { @content; }
+    } @else if $breakpoint == "large" {
+      @media (max-width: 1200px) { @content; }
+    }
+  }
+  
+  // Define a mixin for dark mode
+@mixin dark-mode {
+    @media (prefers-color-scheme: dark) {
+      @content;
+    }
+  }
+  
+  body {
+    // default light theme styles
+    background: #fff;
+    color: #0e0d0d;
+    
+    // dark theme styles
+    @include dark-mode {
+      background: #0b0b0b;
+    //   color: #393737;
+    }
+  }
+  

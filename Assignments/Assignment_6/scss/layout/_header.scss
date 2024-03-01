@@ -1,0 +1,8 @@
+header {
+    background: #f8f9fa;
+    .header-container {
+      @include flexCenter;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+  }

@@ -1,0 +1,17 @@
+.nav-links {
+    @include flexCenter;
+    list-style: none;
+    li {
+      margin: 0 1rem;
+      a {
+        text-decoration: none;
+        color: #333;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+    .active {
+      color: $primary-color;
+    }
+  }

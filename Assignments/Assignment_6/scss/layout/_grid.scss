@@ -1,0 +1,10 @@
+.chef-gallery {
+    @include gridLayout(3);
+    .chef {
+      text-align: center;
+    }
+  }
+  
+  .menu-grid {
+    @include gridLayout(4, 15px);
+  }

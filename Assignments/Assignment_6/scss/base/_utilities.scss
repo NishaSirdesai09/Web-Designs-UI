@@ -1,0 +1,7 @@
+%flex-center {
+    @include flexCenter;
+  }
+  
+  .header-container {
+    @extend %flex-center;
+  }

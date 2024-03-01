@@ -1,0 +1,11 @@
+.btn {
+    background-color: $primary-color;
+    color: #fdfafa;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
