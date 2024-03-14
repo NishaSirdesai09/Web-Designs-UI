@@ -1,0 +1,117 @@
+
+
+/* Navigation */
+nav {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* Registration Form */
+#registrationForm {
+    border: 2px solid black;
+}
+
+#registrationForm {
+    margin: 0 auto;
+    width: 550px;
+}
+
+.individuallogin {
+    padding-left: 50px;
+    margin-top: 50px;
+}
+
+.login {
+    margin-bottom: 30px;
+}
+
+.login #email {
+    margin-left: 10%;
+    width: 64%;
+}
+
+.login #username {
+    margin-left: 7%;
+    width: 64%;
+}
+
+.login #password {
+    margin-left: 8%;
+    width: 64%;
+}
+
+.login #confirmpassword {
+    margin-left: 22px;
+    width: 64%;
+}
+
+.login #submit {
+    margin-left: 112px;
+    width: 150px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#email-error{
+    color: red;
+    padding-left: 23%;
+    padding-top: 2px;
+}
+#username-error{
+    color: red;
+    padding-left: 23%;
+    padding-top: 2px;
+}
+#password-error{
+    color: red;
+    padding-left: 23%;
+    padding-top: 2px;
+}
+#confirmPassword-error{
+    color: red;
+    padding-left: 23%;
+    padding-top: 2px;
+}
+
+/* Page-2 */
+.login #number1 {
+    margin-left: 7%;
+    width: 50%;
+}
+
+.login #number2 {
+    margin-left: 7%;
+    width: 50%;
+}
+
+.login #number3 {
+    margin-left: 11%;
+    width: 30%;
+}
+
+.button-row{
+    margin-bottom: 25px;
+    /* margin-left: 20px; */
+}
+
+.button-row #sub{
+    margin-left: 10px;
+}
+
+.button-row #mul{
+    margin-left: 10px;
+}
+
+.button-row #div{
+    margin-left: 10px;
+}
+
+#number1-error{
+    color: red;
+}
+#number2-error{
+    color: red;
+}
