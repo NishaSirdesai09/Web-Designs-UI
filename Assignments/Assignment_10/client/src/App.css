@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+  background-color: #f5f2f0; /* Lighter background for a modern look */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif; /* Making font consistent across the app */
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .App-logo {
+    animation: none;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 2rem;
+  border-radius: 10px; /* Rounded corners for modern look */
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+  transition: color 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.App-link:hover, .App-link:focus {
+  color: #fff; /* Change color on hover for better interaction feedback */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
